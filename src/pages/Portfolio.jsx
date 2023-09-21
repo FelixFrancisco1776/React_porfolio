@@ -1,0 +1,70 @@
+import React from "react";
+import "../App.css";
+function Portfolio(props) {
+    return (
+        <section style={{ color: "#f4f3ee" }} id="Work">
+            <h1
+                style={{
+                    fontFamily: "Black Ops One, cursive",
+                    fontSize: "70px",
+                    color: "#f4f3ee",
+                }}
+                className="content-name"
+            >
+                Portfolio
+            </h1>
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="image-container">
+                            <img style={{ width: "100%" }} src="/thecomicvault.png" alt="" />
+                            <a
+                                className="hover-text"
+                                href="https://github.com/SienkC/The_Comic_Vault"
+                            >
+                                The Comic Vault 
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                        <div className="image-container">
+                            <img
+                                style={{ width: "100%" }}
+                                src="/scoreboard-analysis.png"
+                                alt=""
+                            />
+                            <a
+                                href="https://scoreboard-analytics-ce788d556490.herokuapp.com/"
+                                className="hover-text"
+                            >
+                                Scoreboard Analytics 
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                        <div className="image-container">
+                            <img style={{ width: "100%" }} src="/soscrisis.png" alt="" />
+                            <a
+                                href="https://intense-brushlands-00209-785b740cd9c1.herokuapp.com/"
+                                className="hover-text"
+                            >
+                                S.O.S Crisis
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-12">
+                        <div className="image-container">
+                            <img style={{ width: "100%" }} src="/placeholder.png" alt="" />
+                            <a href="" className="hover-text">
+                                {" "}
+                                Coming Soon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+export default Portfolio;
